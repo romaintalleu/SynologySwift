@@ -37,7 +37,7 @@ class SynologySwift {
         }
     }
     
-    /// Resolve DS reachable interface for a specific quickConnectId
+    /// Resolve DS reachable interface for a specific QuickConnectId
     static func resolveURL(quickConnectId: String, completion: @escaping (SynologySwift.Result<SynologySwiftURLResolver.DSInfos>) -> ()) {
         SynologySwiftURLResolver.resolve(quickConnectId: quickConnectId, completion: completion)
     }

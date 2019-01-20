@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1836795721F4D04B0016E620 /* SynologySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1836795621F4D04B0016E620 /* SynologySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1836795821F4D59B0016E620 /* SynologySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B768AB21F47AC90091AD57 /* SynologySwift.swift */; };
 		18B7687C21F31F0B0091AD57 /* SynologySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7687221F31F0B0091AD57 /* SynologySwift.framework */; };
 		18B7688121F31F0B0091AD57 /* SynologySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688021F31F0B0091AD57 /* SynologySwiftTests.swift */; };
-		18B7688321F31F0B0091AD57 /* SynologySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B7687521F31F0B0091AD57 /* SynologySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18B7689E21F462E40091AD57 /* SynologySwiftCoreNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688D21F462E40091AD57 /* SynologySwiftCoreNetwork.swift */; };
 		18B7689F21F462E40091AD57 /* SynologySwiftAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688E21F462E40091AD57 /* SynologySwiftAsyncOperation.swift */; };
 		18B768A021F462E40091AD57 /* SynologySwiftTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688F21F462E40091AD57 /* SynologySwiftTools.swift */; };
@@ -23,7 +24,6 @@
 		18B768A921F462E40091AD57 /* SynologySwiftGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7689C21F462E40091AD57 /* SynologySwiftGlobal.swift */; };
 		18B768AA21F462E40091AD57 /* SynologySwiftGlobalObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7689D21F462E40091AD57 /* SynologySwiftGlobalObjectMapper.swift */; };
 		18B768AC21F47AC90091AD57 /* SynologySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B768AB21F47AC90091AD57 /* SynologySwift.swift */; };
-		18B768AD21F47C300091AD57 /* SynologySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B768AB21F47AC90091AD57 /* SynologySwift.swift */; };
 		18B768AE21F47C340091AD57 /* SynologySwiftAuthObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7689921F462E40091AD57 /* SynologySwiftAuthObjectMapper.swift */; };
 		18B768AF21F47C370091AD57 /* SynologySwiftAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7689A21F462E40091AD57 /* SynologySwiftAuth.swift */; };
 		18B768B021F47C3B0091AD57 /* SynologySwiftCoreNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688D21F462E40091AD57 /* SynologySwiftCoreNetwork.swift */; };
@@ -49,8 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1836795621F4D04B0016E620 /* SynologySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynologySwift.h; path = Sources/SynologySwift.h; sourceTree = SOURCE_ROOT; };
 		18B7687221F31F0B0091AD57 /* SynologySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SynologySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B7687521F31F0B0091AD57 /* SynologySwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynologySwift.h; sourceTree = "<group>"; };
 		18B7687621F31F0B0091AD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B7687B21F31F0B0091AD57 /* SynologySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynologySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B7688021F31F0B0091AD57 /* SynologySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynologySwiftTests.swift; sourceTree = "<group>"; };
@@ -89,10 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1836795521F4CFA90016E620 /* SynologySwift */ = {
+			isa = PBXGroup;
+			children = (
+				18B7688C21F462E40091AD57 /* Core */,
+				18B7689B21F462E40091AD57 /* Global */,
+				18B7689521F462E40091AD57 /* URLResolver */,
+				18B7689821F462E40091AD57 /* Authentification */,
+				18B768AB21F47AC90091AD57 /* SynologySwift.swift */,
+			);
+			path = SynologySwift;
+			sourceTree = "<group>";
+		};
 		18B7686821F31F0B0091AD57 = {
 			isa = PBXGroup;
 			children = (
-				18B7687421F31F0B0091AD57 /* SynologySwift */,
+				18B7687421F31F0B0091AD57 /* Sources */,
 				18B7687F21F31F0B0091AD57 /* SynologySwiftTests */,
 				18B7687321F31F0B0091AD57 /* Products */,
 			);
@@ -107,18 +119,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18B7687421F31F0B0091AD57 /* SynologySwift */ = {
+		18B7687421F31F0B0091AD57 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				18B7687521F31F0B0091AD57 /* SynologySwift.h */,
+				1836795521F4CFA90016E620 /* SynologySwift */,
 				18B7687621F31F0B0091AD57 /* Info.plist */,
-				18B768AB21F47AC90091AD57 /* SynologySwift.swift */,
-				18B7688C21F462E40091AD57 /* Core */,
-				18B7689B21F462E40091AD57 /* Global */,
-				18B7689521F462E40091AD57 /* URLResolver */,
-				18B7689821F462E40091AD57 /* Authentification */,
+				1836795621F4D04B0016E620 /* SynologySwift.h */,
 			);
-			path = SynologySwift;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		18B7687F21F31F0B0091AD57 /* SynologySwiftTests */ = {
@@ -185,7 +193,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B7688321F31F0B0091AD57 /* SynologySwift.h in Headers */,
+				1836795721F4D04B0016E620 /* SynologySwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +317,7 @@
 				18B768B221F47C410091AD57 /* SynologySwiftTools.swift in Sources */,
 				18B768B121F47C3E0091AD57 /* SynologySwiftAsyncOperation.swift in Sources */,
 				18B7688121F31F0B0091AD57 /* SynologySwiftTests.swift in Sources */,
+				1836795821F4D59B0016E620 /* SynologySwift.swift in Sources */,
 				18B768AF21F47C370091AD57 /* SynologySwiftAuth.swift in Sources */,
 				18B768AE21F47C340091AD57 /* SynologySwiftAuthObjectMapper.swift in Sources */,
 				18B768B321F47C440091AD57 /* SynologySwiftConstants.swift in Sources */,
@@ -317,7 +326,6 @@
 				18B768B821F47D520091AD57 /* AES256Crypter.swift in Sources */,
 				18B768B421F47C470091AD57 /* SynologySwiftGlobal.swift in Sources */,
 				18B768B021F47C3B0091AD57 /* SynologySwiftCoreNetwork.swift in Sources */,
-				18B768AD21F47C300091AD57 /* SynologySwift.swift in Sources */,
 				18B768B921F47D550091AD57 /* RSAUtils.swift in Sources */,
 				18B768B721F47C4F0091AD57 /* SynologySwiftURLResolverObjectMapper.swift in Sources */,
 			);
@@ -466,7 +474,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SynologySwift/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +500,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SynologySwift/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
