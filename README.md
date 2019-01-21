@@ -2,7 +2,6 @@
 
 [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/Thomaslegravier/SynologySwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/Thomaslegravier/SynologySwift)
-[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/apple/swift-package-manager)
 
 [![Twitter](https://img.shields.io/badge/Twitter-@lebasalte-blue.svg?style=flat)](https://twitter.com/lebasalte)
 
