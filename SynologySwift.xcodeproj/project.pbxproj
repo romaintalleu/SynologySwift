@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1836795721F4D04B0016E620 /* SynologySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1836795621F4D04B0016E620 /* SynologySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1836795821F4D59B0016E620 /* SynologySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B768AB21F47AC90091AD57 /* SynologySwift.swift */; };
+		1836795A21F5E4B70016E620 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1836795921F5E4B60016E620 /* README.md */; };
 		18B7687C21F31F0B0091AD57 /* SynologySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7687221F31F0B0091AD57 /* SynologySwift.framework */; };
 		18B7688121F31F0B0091AD57 /* SynologySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688021F31F0B0091AD57 /* SynologySwiftTests.swift */; };
 		18B7689E21F462E40091AD57 /* SynologySwiftCoreNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7688D21F462E40091AD57 /* SynologySwiftCoreNetwork.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		1836795621F4D04B0016E620 /* SynologySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynologySwift.h; path = Sources/SynologySwift.h; sourceTree = SOURCE_ROOT; };
+		1836795921F5E4B60016E620 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18B7687221F31F0B0091AD57 /* SynologySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SynologySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B7687621F31F0B0091AD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B7687B21F31F0B0091AD57 /* SynologySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynologySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				18B7687421F31F0B0091AD57 /* Sources */,
 				18B7687F21F31F0B0091AD57 /* SynologySwiftTests */,
 				18B7687321F31F0B0091AD57 /* Products */,
+				1836795921F5E4B60016E620 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1836795A21F5E4B70016E620 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
