@@ -42,7 +42,7 @@ class SynologySwift {
         SynologySwiftURLResolver.resolve(quickConnectId: quickConnectId, completion: completion)
     }
     
-    /// Liste available APIs on DS
+    /// List available APIs on specific DS
     static func resolveAvailableAPIs(dsInfos: SynologySwiftURLResolver.DSInfos? = SynologySwiftURLResolver.dsResultInfos, completion: @escaping (SynologySwift.Result<SynologySwiftGlobalObjectMapper.APIsInfo>) -> ()) {
         SynologySwiftGlobal.resolveAvailableAPIs(dsInfos: dsInfos, completion: completion)
     }

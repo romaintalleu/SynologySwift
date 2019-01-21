@@ -145,10 +145,7 @@ class SynologySwiftAuth {
         /* Generate RSA */
         let passphrase = SynologySwiftTools.generateRandomString(length: 501)
         
-        guard
-            let rsaK = try? RSAUtils.encryptWithRSAPublicKey(str: passphrase, pubkeyBase64: encryptionInfo.publicKey),
-            let rsa = rsaK
-        else {
+        guard let rsa = (try? RSAUtils.encryptWithRSAPublicKey(str: passphrase, pubkeyBase64: encryptionInfo.publicKey)) as? Data else {
             return completion(.failure(.other("An error occured - Failed to generate encrypt auth RSA params")))
         }
         
@@ -164,7 +161,7 @@ class SynologySwiftAuth {
             "aes": aes.base64EncodedString()
         ]
         guard let cipherJSONData = try? JSONSerialization.data(withJSONObject: cipherData, options: []) else {
-                return completion(.failure(.other("An error occured - Failed to generate encrypt auth cypher json params params")))
+            return completion(.failure(.other("An error occured - Failed to generate encrypt auth cypher json params params")))
         }
         
         params[encryptionInfo.cipherKey] = String(data: cipherJSONData, encoding: .utf8)!
